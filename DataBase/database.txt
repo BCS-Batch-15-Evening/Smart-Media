@@ -1,0 +1,67 @@
+SQL CREATE TABLE Syntax
+----------------------
+
+CREATE TABLE table_name
+(
+column_name1 data_type(size),
+column_name2 data_type(size),
+column_name3 data_type(size),
+....
+);
+
+CREATE TABLE QUERY
+------------------
+
+CREATE TABLE Category
+(
+cat_id int(4) PRIMARY KEY,
+cat_name varcahar(30) not null
+); 
+
+
+
+SQL INSERT INTO Syntax
+----------------------
+
+INSERT INTO table_name
+VALUES (value1,value2,value3,...);
+
+INSERT QUERY
+------------
+
+INSERT INTO Category
+VALUES (2,"category name");
+
+OR
+
+INSERT INTO user(email_id,first_name,last_name)
+VALUES ('ahsan_jamal@gmail.com','Ahsan','Jamal');
+
+
+
+SQL UPDATE Syntax
+----------------------
+UPDATE table_name
+SET column1=value1,column2=value2,...
+WHERE some_column=some_value;
+
+UPDATE QUERY
+------------
+
+UPDATE catergory
+set cat_id=4
+where cat_id=5;
+
+
+
+SQL DELETE Syntax
+----------------------
+
+DELETE FROM table_name
+WHERE some_column=some_value;
+
+DELETE QUERY
+------------
+
+DELETE FROM MULTIMEDIA
+WHERE content_id=10;
